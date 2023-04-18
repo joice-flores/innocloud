@@ -1,0 +1,22 @@
+.card {
+  height: 200px;
+  background-color: white;
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 20px 20px 30px #888888;
+}
+@media (min-width: 580px) {
+  .card {
+    width: 45%;
+  }
+}
+@media (min-width: 900px) {
+  .card {
+    width: 30%;
+  }
+}
+.card :hover {
+  cursor: pointer;
+  background-color: #DCDEDF;
+  transform: matrix(#888888);
+}/*# sourceMappingURL=index.css.map */

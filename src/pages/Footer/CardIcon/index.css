@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.container > a {
+  display: none;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+.container i {
+  font-size: 25px;
+  color: white;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,24 @@
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 100%;
+  background-color:#013155;
+  padding-left: 15px;
+
+  p {
+    text-align: center;
+    color: white;
+    width: 80%;
+  }
+}
+
+.footer-item {
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}

@@ -1,0 +1,50 @@
+#service {
+	width: 100%;
+	height: auto;
+	position: relative;
+	justify-content: center;
+	background-color: #fff;
+	position: relative;
+	padding-left: 20px;
+	padding-bottom: 200px;
+  z-index: -2;
+	@media (min-width:900px) {
+		padding-bottom: 250px;
+	
+	}
+	@media (min-width:1280px) {
+		padding-bottom: 300px;
+
+	}
+	& > h5 {
+		width: 90%;
+    text-align: left;
+		color: #eac358;
+    margin: 20px 0;
+	}
+}
+
+.box-card {
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto;
+	@media (min-width:580px) {
+		grid-template-columns: auto auto;
+		justify-content: space-between;
+	}
+	@media (min-width:900px) {
+		grid-template-columns: auto auto auto;
+	}
+	@media (min-width:1280px) {
+
+	}
+}
+
+.blob-blue {
+  // height: 170px;
+  width: 100%;
+  position: absolute;
+  bottom: -1px;
+  left: 0; 
+  z-index: -1;
+}

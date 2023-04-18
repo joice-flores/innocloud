@@ -1,0 +1,139 @@
+#about {
+  position: relative;
+  height: 820px;
+  align-items: flex-start;
+  @media (min-width:580px) {
+    height: 700px;
+    align-items: center;
+  }
+  @media (min-width:900px) {
+    height: 600px;
+    align-items: center;
+  }
+  @media (min-width:1280px) {
+    height: 700px;
+  }
+
+  & > h5 {
+    color: #eac358;
+    padding-left: 50px;
+    @media (min-width:580px) {
+      padding-left: 100px;
+    }
+    @media (min-width:900px) {
+      padding-left: 100px;
+    }
+  }
+}
+
+.box-about {
+  display: flex;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-right: 30px;
+  @media (min-width:580px) {
+    height: 600px;
+    padding-right: 0;
+  }
+  @media (min-width:900px) {
+    height: 400px;
+  }
+}
+
+.box-text {
+  display: flex;
+  width: 80%;
+  justify-content: flex-end;
+  flex-direction: column-reverse !important;
+  @media (min-width:580px) {
+    flex-direction: row !important;
+    width: 80%;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+  }
+  @media (min-width:900px) {
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+
+  }
+  @media (min-width:1280px) {
+
+  }
+  & p {
+    color: white;
+    width: 100%;
+    @media (min-width:580px) {
+      width: 50%;
+    }
+    @media (min-width:900px) {
+      width: 50%;
+    }
+    @media (min-width:1280px) {
+      width: 40%;
+    }
+  }
+  & > h5 {
+    color: white;
+    margin-top: 5px;
+    font-weight: bold;
+    width: 100%;
+    @media (min-width:580px) {
+      width: 40%;
+    }
+    @media (min-width:900px) {
+      width: 40%;
+      margin-top: 0;
+    }
+    @media (min-width:1280px) {
+      width: 40%;
+  
+    }
+  }
+}
+
+.box-text + .box-text {
+  width: 45% !important;
+  justify-content: flex-end;
+  margin-top: -150px;
+  flex-direction: column-reverse !important;
+
+  @media (min-width:580px) {
+    flex-direction: row-reverse !important;
+    margin-top: -100px;
+  }
+  @media (min-width:900px) {
+    width: 80% !important;
+    flex-direction: row-reverse;
+    margin-top: -70px;
+  }
+  @media (min-width:1280px) {
+    margin-top: 0;
+  }
+}
+.professional {
+  height: 400px;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  @media (min-width:900px) {
+  }
+  @media (min-width:1280px) {
+
+  }
+}
+
+.blob-white {
+  height: 100px;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  @media (min-width:900px) {
+  }
+  @media (min-width:1280px) {
+
+  }
+}
