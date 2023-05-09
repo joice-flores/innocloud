@@ -2,12 +2,13 @@
 
 import { Container, Grid } from "@mui/material";
 import About from "./pages/About";
-import Contatos from "./pages/Contatos";
+import Contatos from "./pages/Contact";
 import Footer from "./pages/Footer";
 import Home from "./pages/Home";
 import ResponsiveAppBar from "./pages/Navbar";
 import Services from "./pages/Services";
 import './App.css'
+import Why from "./pages/why";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Home />
       <About />
       <Services />
+      <Why />
       <Contatos />
       <Footer />
     </Grid>

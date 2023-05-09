@@ -1,17 +1,23 @@
 .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
   justify-content: center;
   align-items: center;
   margin: 20px;
 }
-.container > a {
+.container > p {
   display: none;
   font-size: 14px;
   color: white;
   text-decoration: none;
 }
+@media (min-width: 540px) {
+  .container > p {
+    display: flex;
+    margin-top: 5px;
+  }
+}
 .container i {
-  font-size: 25px;
+  font-size: 30px;
   color: white;
 }/*# sourceMappingURL=index.css.map */

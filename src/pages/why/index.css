@@ -1,0 +1,33 @@
+.content {
+  width: 100%;
+  justify-content: center;
+  padding-left: 20px;
+}
+.content > h5 {
+  width: 90%;
+  text-align: left;
+  color: #eac358;
+  margin: 50px 30px;
+  text-transform: uppercase;
+}
+
+.form-box {
+  width: 90%;
+  margin-top: 50px;
+  font-family: "Rajdhani", sans-serif;
+}
+@media (min-width: 580px) {
+  .form-box {
+    width: 80%;
+  }
+}
+@media (min-width: 900px) {
+  .form-box {
+    width: 70%;
+  }
+}
+@media (min-width: 1280px) {
+  .form-box {
+    align-items: center;
+  }
+}/*# sourceMappingURL=index.css.map */

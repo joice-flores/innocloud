@@ -1,59 +1,82 @@
+@keyframes cursor {
+	0% {
+		opacity: 1;
+	}
+	49% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
 #home {
-  background-image: url('../../assets/images//blob-home.png');
-  height: 800px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position-y: 0;
-  align-items: center;
   width: 100%;
-
-  @media (min-width:580px) {
-    height: 900px;
-    background-size: 800px;
-    background-position-y: -200px;
-    background-position-x: -250px;
-
-  }
-
-  @media (min-width:900px) {
-    background-position-x: -100px;
-    background-size: 830px;
-
-
-  }
-  @media (min-width:1280px) {
-    background-size: 900px;
-    background-position-y: -300px;
-    background-position-x: -80px;
-
-  }
+	height: calc(100vh + 20px);
+	align-items: center;
 }
 
 .box-home {
-  justify-content: center;
-  padding: 0 100px;
-  @media(min-width:580px) {
-    align-items: center;
-    justify-content: space-around;
-  }
+	justify-content: center;
+	@media (min-width: 580px) {
+		margin-top: 100px !important;
+		align-items: center;
+		justify-content: space-around;
+	}
 }
 
 .box-text-home {
-  width: 80%;
-  justify-content: center;
-  align-items: center;
-  padding: 0 30px 50px 40px;
-  @media (min-width:580px) {
-    padding-bottom: 50px;
-  }
-  @media (min-width:900px) {
-    padding-bottom: 0;
+	width: 100% !important;
+	justify-content: center;
+	align-items: center;
+	padding-left: 20px;
+	& > h6 {
+		text-transform: uppercase;
+		margin-bottom: 20px;
+		color: #eac358;
+	}
+	& > .writen {
+		font-family: "Rajdhani", sans-serif;
+		text-transform: capitalize;
+		font-size: 25px;
+    color: #fff;
+    @media (min-width: 580px) {
+      font-size: 60px;
+    }
+    @media (min-width: 900px) {
+      padding-bottom: 0;
+    }
 
-  }
-  
+		&:first-of-type {
+			margin-right: 10px;
+		}
+		&:last-of-type {
+			font-weight: bold;
+			&:after {
+				content: "";
+				display: inline-block;
+				background-color: #eac358;
+				margin-left: 8px;
+				height: 20px;
+				width: 4px;
+				animation: cursor 0.8s infinite;
+				@media (min-width: 580px) {
+					height: 50px;
+				}
+			}
+		}
+	}
+	@media (min-width: 580px) {
+		padding-bottom: 50px;
+	}
+	@media (min-width: 900px) {
+		padding-bottom: 0;
+	}
 }
 
-.logo {
-  width: 200px;
-}
+// .logo {
+//   width: 200px;
+// }

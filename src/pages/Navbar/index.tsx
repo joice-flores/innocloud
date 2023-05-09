@@ -25,10 +25,10 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="fixed" style={{ backgroundColor: 'rgba(2, 70, 108, 1)'}}>
-      <Container maxWidth="xl">
+    <AppBar className='navbar-container'>
+      <Container maxWidth="lg">
         <Toolbar disableGutters>
-          <img src={LogoInnocloud} alt='' style={{ height: 50}} />
+          <img src={LogoInnocloud} alt='' style={{ height: 50, width: 'fitContent'}} />
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, justifyContent: 'flex-end' }}>
             <IconButton
               size="large"
@@ -60,44 +60,22 @@ function ResponsiveAppBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page.link} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center"><a href={`#${page.link}`} style={{ textDecoration: 'none' }}>{page.title}</a></Typography>
+                  <Typography textAlign="center"><a className='linkDropDown' href={`#${page.link}`} style={{ textDecoration: 'none' }}>{page.title}</a></Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end' }}>
+            {pages.map(page => (
               <Button
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                <a href="#home" className='link'>
-                  Home
+                <a href={`#${page.link}`} className='link'>
+                  {page.title}
                 </a>
               </Button>
-              <Button
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                <a href="#about" className='link'>
-                  Home
-                </a>
-              </Button>
-              <Button
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                <a href="#service" className='link'>
-                  Serviços
-                </a>
-              </Button>
-              <Button
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                <a href="#contact" className='link'>
-                  Contato
-                </a>
-              </Button>
+            ))}
           </Box>
         </Toolbar>
       </Container>

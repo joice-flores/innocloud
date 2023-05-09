@@ -1,13 +1,12 @@
 #service {
   width: 100%;
-  height: auto;
   position: relative;
   justify-content: center;
   background-color: #fff;
   position: relative;
   padding-left: 20px;
-  padding-bottom: 200px;
-  z-index: -2;
+  margin-bottom: 20px;
+  padding-bottom: 50px;
 }
 @media (min-width: 900px) {
   #service {
@@ -16,36 +15,32 @@
 }
 @media (min-width: 1280px) {
   #service {
-    padding-bottom: 300px;
+    padding-bottom: 50px;
+    margin-bottom: 200px;
   }
 }
 #service > h5 {
   width: 90%;
   text-align: left;
   color: #eac358;
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
 .box-card {
   width: 100%;
   display: grid;
   grid-template-columns: auto;
+  row-gap: 30px;
 }
 @media (min-width: 580px) {
   .box-card {
-    grid-template-columns: auto auto;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 @media (min-width: 900px) {
   .box-card {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto !important;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
   }
-}
-.blob-blue {
-  width: 100%;
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  z-index: -1;
 }/*# sourceMappingURL=index.css.map */

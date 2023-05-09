@@ -1,5 +1,5 @@
 
-import { Grid } from '@mui/material';
+import { Grid, Link, Typography } from '@mui/material';
 import './index.css'
 
 interface CardProps {
@@ -10,11 +10,11 @@ interface CardProps {
 
 function CardIcon(props: CardProps) {
   return (
-    <Grid container item xs={2} className='container'>
+    <Grid href={props.link} target='blank' component={Link} container item xs={2} className='container'>
       <i className={props.icon}></i>
-      <a target='blank' href={props.link}>
+      <Typography>
         {props.text}
-      </a>
+      </Typography>
     </Grid>
   )
 }

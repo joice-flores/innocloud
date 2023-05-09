@@ -1,51 +1,80 @@
+@keyframes cursor {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 #home {
-  background-image: url("../../assets/images//blob-home.png");
-  height: 800px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position-y: 0;
-  align-items: center;
   width: 100%;
-}
-@media (min-width: 580px) {
-  #home {
-    height: 900px;
-    background-size: 800px;
-    background-position-y: -200px;
-    background-position-x: -250px;
-  }
-}
-@media (min-width: 900px) {
-  #home {
-    background-position-x: -100px;
-    background-size: 830px;
-  }
-}
-@media (min-width: 1280px) {
-  #home {
-    background-size: 900px;
-    background-position-y: -300px;
-    background-position-x: -80px;
-  }
+  height: calc(100vh + 20px);
+  align-items: center;
 }
 
 .box-home {
   justify-content: center;
-  padding: 0 100px;
 }
 @media (min-width: 580px) {
   .box-home {
+    margin-top: 100px !important;
     align-items: center;
     justify-content: space-around;
   }
 }
 
 .box-text-home {
-  width: 80%;
+  width: 100% !important;
   justify-content: center;
   align-items: center;
-  padding: 0 30px 50px 40px;
+  padding-left: 20px;
+}
+.box-text-home > h6 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #eac358;
+}
+.box-text-home > .writen {
+  font-family: "Rajdhani", sans-serif;
+  text-transform: capitalize;
+  font-size: 25px;
+  color: #fff;
+}
+@media (min-width: 580px) {
+  .box-text-home > .writen {
+    font-size: 60px;
+  }
+}
+@media (min-width: 900px) {
+  .box-text-home > .writen {
+    padding-bottom: 0;
+  }
+}
+.box-text-home > .writen:first-of-type {
+  margin-right: 10px;
+}
+.box-text-home > .writen:last-of-type {
+  font-weight: bold;
+}
+.box-text-home > .writen:last-of-type:after {
+  content: "";
+  display: inline-block;
+  background-color: #eac358;
+  margin-left: 8px;
+  height: 20px;
+  width: 4px;
+  animation: cursor 0.8s infinite;
+}
+@media (min-width: 580px) {
+  .box-text-home > .writen:last-of-type:after {
+    height: 50px;
+  }
 }
 @media (min-width: 580px) {
   .box-text-home {
@@ -56,8 +85,4 @@
   .box-text-home {
     padding-bottom: 0;
   }
-}
-
-.logo {
-  width: 200px;
 }/*# sourceMappingURL=index.css.map */

@@ -1,4 +1,19 @@
+.navbar-container {
+	background-color: rgba(2, 70, 108, 0.8) !important;
+	padding: 10px 0;
+}
+
 .link {
-  text-decoration: none;
-  color: #fff;
+	text-decoration: none;
+	color: #eac358;
+	&:visited {
+		color: #eac358;
+	}
+}
+.linkDropDown {
+	text-decoration: none;
+	color: rgba(2, 70, 108, 0.8);
+	&:visited {
+		color: rgba(2, 70, 108, 0.8);
+	}
 }

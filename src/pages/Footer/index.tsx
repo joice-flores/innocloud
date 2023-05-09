@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 
 import CardIcon from "./CardIcon";
 
@@ -8,7 +8,7 @@ import { cardProps } from "./Mock";
 const Footer = () => {
 	return (
 		<Grid container className="footer-box">
-			<Grid container className="footer-item">
+			<Grid container item xs={12} md={8} className="footer-item">
         {cardProps.map(item => (
           <CardIcon
             icon={item.icon}
@@ -17,9 +17,9 @@ const Footer = () => {
           />
         ))}
 			</Grid>
-			<p className="copyright">
+			<Typography className="copyright">
 				&copy;Copyright Esse site foi produzido<br/> por Fiori Solutions - 2023
-			</p>
+			</Typography>
 		</Grid>
 	);
 };

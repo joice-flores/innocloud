@@ -3,15 +3,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 150px;
   width: 100%;
   background-color: #013155;
-  padding-left: 15px;
+  padding: 50px 0 50px 15px;
 }
-.footer-box p {
+.footer-box .copyright {
+  width: 100%;
   text-align: center;
   color: white;
-  width: 80%;
+  margin-top: 30px;
 }
 
 .footer-item {

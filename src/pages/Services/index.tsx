@@ -1,7 +1,7 @@
 import { Grid, Typography } from "@mui/material";
 import { cardProps } from "./Mock";
 import Card from "./Card";
-import Blob from "../../assets/images/blob-blue.png";
+import Blob from "../../assets/images/blob.png";
 import "./index.css";
 
 function Services() {
@@ -14,11 +14,11 @@ function Services() {
 						key={index}
 						title={item.title}
 						icon={item.icon}
+						describe={item.describe}
 					/>
 				))}
 			</Grid>
 
-			<img src={Blob} className="blob-blue" alt="" />
 		</Grid>
 	);
 }

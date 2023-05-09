@@ -1,23 +1,22 @@
 #about {
   position: relative;
-  height: 820px;
+  height: 900px;
   align-items: flex-start;
 }
 @media (min-width: 580px) {
   #about {
-    height: 700px;
+    height: 800px;
     align-items: center;
   }
 }
 @media (min-width: 900px) {
   #about {
     height: 600px;
-    align-items: center;
   }
 }
 @media (min-width: 1280px) {
   #about {
-    height: 700px;
+    margin-top: 0px;
   }
 }
 #about > h5 {
@@ -37,20 +36,21 @@
 
 .box-about {
   display: flex;
-  height: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
   align-items: flex-start;
   justify-content: flex-end;
   padding-right: 30px;
 }
 @media (min-width: 580px) {
   .box-about {
-    height: 600px;
     padding-right: 0;
   }
 }
 @media (min-width: 900px) {
   .box-about {
-    height: 400px;
+    height: 100%;
+    align-items: center;
   }
 }
 
@@ -62,12 +62,16 @@
 }
 @media (min-width: 580px) {
   .box-text {
-    flex-direction: row !important;
     width: 80%;
     height: -moz-fit-content;
     height: fit-content;
     align-items: center;
     justify-content: center;
+  }
+}
+@media (min-width: 600px) {
+  .box-text {
+    flex-direction: row !important;
   }
 }
 @media (min-width: 900px) {
@@ -78,28 +82,33 @@
     justify-content: center;
   }
 }
-.box-text p {
+.box-text h6 {
   color: white;
   width: 100%;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
 }
 @media (min-width: 580px) {
-  .box-text p {
+  .box-text h6 {
     width: 50%;
   }
 }
 @media (min-width: 900px) {
-  .box-text p {
+  .box-text h6 {
     width: 50%;
   }
 }
 @media (min-width: 1280px) {
-  .box-text p {
+  .box-text h6 {
     width: 40%;
+    text-align: center;
   }
 }
 .box-text > h5 {
-  color: white;
+  color: #eac358;
   margin-top: 5px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 30px;
   font-weight: bold;
   width: 100%;
 }
@@ -117,44 +126,50 @@
 @media (min-width: 1280px) {
   .box-text > h5 {
     width: 40%;
+    text-transform: uppercase;
   }
 }
 
 .box-text + .box-text {
   width: 45% !important;
   justify-content: flex-end;
-  margin-top: -150px;
+  margin-top: 30px;
   flex-direction: column-reverse !important;
 }
 @media (min-width: 580px) {
   .box-text + .box-text {
+    width: 80% !important;
+  }
+}
+@media (min-width: 600px) {
+  .box-text + .box-text {
     flex-direction: row-reverse !important;
-    margin-top: -100px;
+    width: 80% !important;
   }
 }
 @media (min-width: 900px) {
   .box-text + .box-text {
-    width: 80% !important;
     flex-direction: row-reverse;
     margin-top: -70px;
   }
 }
 @media (min-width: 1280px) {
   .box-text + .box-text {
-    margin-top: 0;
+    margin-top: -200px;
+  }
+}
+.box-text + .box-text h6 {
+  text-align: center;
+}
+@media (min-width: 1280px) {
+  .box-text + .box-text h6 {
+    text-align: left;
   }
 }
 
 .professional {
   height: 400px;
   position: absolute;
-  bottom: 50px;
+  bottom: 0;
   left: 0;
-}
-.blob-white {
-  height: 100px;
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 100%;
 }/*# sourceMappingURL=index.css.map */
