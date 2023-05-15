@@ -11,7 +11,13 @@ import { Button, MenuItem } from '@mui/material';
 import LogoInnocloud from '../../assets/images/logo.png'
 import './index.css'
 
-const pages = [{title: 'Home', link: 'home'}, {title: 'Sobre', link: 'about'}, {title: 'Serviços', link: 'service'}, {title: 'Contato', link: 'contact'}];
+const pages = [
+  {title: 'Home', link: 'home'},
+  {title: 'Sobre', link: 'about'},
+  {title: 'Serviços', link: 'service'},
+  {title: 'Vantagens', link: 'why'},
+  {title: 'Contato', link: 'contact'}
+];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);

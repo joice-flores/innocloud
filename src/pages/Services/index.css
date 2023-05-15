@@ -10,13 +10,7 @@
 }
 @media (min-width: 900px) {
   #service {
-    padding-bottom: 250px;
-  }
-}
-@media (min-width: 1280px) {
-  #service {
     padding-bottom: 50px;
-    margin-bottom: 200px;
   }
 }
 #service > h5 {

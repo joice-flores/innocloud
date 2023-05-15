@@ -9,7 +9,6 @@ interface FormProps {
 	message: string;
 }
 const Contatos = () => {
-	const [name, setName] = useState<FormProps | undefined>();
 	return (
 		<Grid container id="contact" className="form-content">
 			<Typography variant="h5">Quer fazer um orçamento?</Typography>
@@ -19,8 +18,12 @@ const Contatos = () => {
 					href="https://wa.me/5532984172073?text=Gostaria de fazer um orçamento"
 					target="_blank"
 				>
-					<Button variant="outlined" style={{color: '#fff', borderColor: '#eac358' }}>Clique aqui</Button>
-
+					<Button
+						variant="outlined"
+						style={{ color: "#fff", borderColor: "#eac358" }}
+					>
+						Clique aqui
+					</Button>
 				</a>
 			</Grid>
 			{/* <form>

@@ -6,7 +6,7 @@ import Card from "./Card";
 const Why = () => {
   
 	return (
-		<Grid container id="contact" className="content">
+		<Grid container id="why" className="content">
       <Typography variant="h5">Por quê nos contratar</Typography>
 			<Grid container item className='form-box' justifyContent='center' spacing={5} alignItems='flex-start'>
 				{
