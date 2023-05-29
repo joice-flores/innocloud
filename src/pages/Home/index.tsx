@@ -1,8 +1,8 @@
 import React from "react";
-import Logo from "../../assets/images/logo.png";
-import "./index.css";
 import { Grid, Typography } from "@mui/material";
 import Typed from "typed.js";
+import Logo from "../../assets/images/logo.png";
+import "./index.css";
 
 
 const Home = () => {
@@ -16,7 +16,6 @@ const Home = () => {
     });
 
     return () => {
-      // Destroy Typed instance during cleanup to stop animation
       typed.destroy();
     };
   }, []);
@@ -28,12 +27,9 @@ const Home = () => {
 					<Typography color="white" variant="h6">
 						Somos consultores em
 					</Typography>
-					<Typography className="writen">Soluções de</Typography>
+					<Typography className="writen">Soluções </Typography>
 					<Typography className="writen" ref={el}>''</Typography>
 				</Grid>
-				{/* <Grid item xs={12} sm={6} md={4}>
-					<img src={Logo} className="logo" />
-				</Grid> */}
 			</Grid>
 		</Grid>
 	);

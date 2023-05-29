@@ -1,5 +1,4 @@
 import Foto from '../../assets/images/profissional.png'
-import Blob from '../../assets/images/blob.png'
 import { Grid, Typography } from '@mui/material';
 import './index.css'
 
@@ -15,7 +14,7 @@ const About = () => {
           <Typography variant='h5'> INNOCLOUD</Typography>
         </Grid>
         <Grid className='box-text'>
-          <Typography variant='subtitle1'>Técnico de informática pela E. E. Emilia Esteves Marques e Analista de Sistemas pela Univesidade do Estado de Minas Gerais.</Typography>
+          <Typography variant='subtitle1'>Técnico de informática pela Instituto Federal Do Espírito Santo, campus Alegre e Analista de Sistemas pela Universidade do Estado de Minas Gerais.</Typography>
           <Typography variant='h5'>Jonatas Costa</Typography>
         </Grid>
       </Grid>

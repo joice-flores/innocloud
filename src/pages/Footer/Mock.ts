@@ -17,7 +17,7 @@ export const cardProps = [
   },
   {
     icon:"uil uil-whatsapp-alt",
-    link:"https://wa.link/81l252",
+    link:"https://wa.link/s28n1u",
     text:"Whatsapp",
   },
   {
