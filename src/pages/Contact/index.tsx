@@ -1,13 +1,6 @@
 import { Button, Grid, Typography } from "@mui/material";
 import "./index.css";
-import { useState } from "react";
 
-interface FormProps {
-	name: string;
-	phone: string;
-	email: string;
-	message: string;
-}
 const Contatos = () => {
 	return (
 		<Grid container id="contact" className="form-content">

@@ -1,7 +1,6 @@
 import React from "react";
 import { Grid, Typography } from "@mui/material";
 import Typed from "typed.js";
-import Logo from "../../assets/images/logo.png";
 import "./index.css";
 
 

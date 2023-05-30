@@ -1,7 +1,6 @@
 import { Grid, Typography } from "@mui/material";
 import { cardProps } from "./Mock";
 import Card from "./Card";
-import Blob from "../../assets/images/blob.png";
 import "./index.css";
 
 function Services() {

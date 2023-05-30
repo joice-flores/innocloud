@@ -1,5 +1,3 @@
-import { Assistance, Automation, Computer, Electric, Lamp, Security } from '../../assets/Icons'
-
 export const cardProps = [
   {
     icon: 'uil uil-constructor',
