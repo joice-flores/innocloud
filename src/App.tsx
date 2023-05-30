@@ -1,6 +1,6 @@
 
 
-import { Container, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 import About from "./pages/About";
 import Contatos from "./pages/Contact";
 import Footer from "./pages/Footer";
