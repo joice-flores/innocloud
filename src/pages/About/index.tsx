@@ -18,7 +18,7 @@ const About = () => {
           <Typography variant='h5'>Jonatas Costa</Typography>
         </Grid>
       </Grid>
-      <img src={Foto} className='professional'/>
+      <img src={Foto} className='professional' alt='foto de Jonatas de braços cruzados e usando um capacete de proteção branco'/>
     </Grid>
   )
 }
